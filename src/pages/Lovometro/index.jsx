@@ -1,11 +1,13 @@
 import React from 'react'
 import Heart from '../../assets/heart.png'
 
+import './style.css'
+
 function Lovometro() {
     return (
         <main id="lovometro">
             <div>
-                <div>
+                <div className="title">
                     <h1>Lovometro</h1>
                     <h2>Descubra o quanto você e a pessoa amada se combinam</h2>
                 </div>

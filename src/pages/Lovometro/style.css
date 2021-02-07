@@ -1,0 +1,55 @@
+#lovometro {
+    background: linear-gradient(
+    to top right,
+    rgba(245, 152, 152, 0.4),
+    rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+    min-width: 70%;
+    min-height: 500px;
+    display: flex;
+}
+
+/* ------------------------- LEFT SECTION ----------------------------- */
+#lovometro > :first-child {
+    max-width: 45%;
+    padding: 20px;
+    border-radius: 30px;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.1)
+    );
+}
+
+#lovometro h1, #lovometro h2, #lovometro input[type="submit"] {
+    font-family: "Lexend Mega";
+    font-size: 1.125rem;
+}
+
+#lovometro input[type="text"] {
+    font-family: "Lexend Deca";
+}
+
+#lovometro .title {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#lovometro h1 {
+    font-size: 3rem;
+}
+
+#lovometro form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ------------------------- RIGTH SECTION ----------------------------- */
+#lovometro img {
+    width: 250px;
+}
+
