@@ -3,7 +3,7 @@ import Heart from '../../assets/heart.png'
 
 function Lovometro() {
     return (
-        <main>
+        <main id="lovometro">
             <div>
                 <div>
                     <h1>Lovometro</h1>

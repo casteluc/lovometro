@@ -1,3 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right, #FF5F6D, #FFC371);
+}
