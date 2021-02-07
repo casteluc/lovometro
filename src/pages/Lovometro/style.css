@@ -10,6 +10,7 @@
     min-height: 500px;
     display: flex;
     z-index: 10;
+    border: 1px solid rgba(255, 255, 255, 0.15)
 }
 
 /* ------------------------- LEFT SECTION ----------------------------- */
@@ -68,6 +69,7 @@
     border: none;
     outline: none;
     font-size: 1.125rem;
+    box-sizing: border-box;
 }
 
 #lovometro form input::placeholder {
@@ -127,3 +129,71 @@
     }
 }
 
+@keyframes small-heart-beat {
+    0% {
+        width: 210px
+    }
+
+    50% {
+        width: 240px;
+    }
+
+    100% {
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #lovometro {
+        display: block;
+        max-width:500px;
+        min-width: 0;
+        margin: 40px 60px;
+    }
+
+    #lovometro > :first-child {
+        max-width: 100%;
+        box-sizing: border-box;
+        min-height: 400px;
+    }
+
+    #lovometro > :last-child {
+        max-width: 100%;
+        box-sizing: border-box;
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #lovometro {
+        margin: 40px;
+    }
+
+    #lovometro h1 {
+        font-size: 2.5rem;
+    }
+
+    #lovometro h2 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    #lovometro {
+        margin: 40px 20px;
+    }
+
+    #lovometro > :first-child {
+        padding: 10px;
+    }
+
+    #lovometro h1 {
+        font-size: 2rem;
+    }
+
+    #lovometro > :last-child img {
+        width: 300px;
+        position: absolute;
+        animation: small-heart-beat 2s infinite ease-in-out;
+    }    
+}
