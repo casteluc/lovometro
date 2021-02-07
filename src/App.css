@@ -11,9 +11,8 @@
     font-family: Montserrat;
 }
 
-.app img {
+.app .background-heart {
     position: absolute;
-    max-width: 300px;
     z-index: 1;
 }
 

@@ -18,6 +18,7 @@ function Lovometro() {
                 </form>
             </div>
             <div>
+                <h3 className="result">43%</h3>
                 <img src={Heart} alt="Heart"/>
             </div>
         </main>

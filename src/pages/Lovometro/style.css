@@ -92,7 +92,30 @@
     max-width: 55%;
 }
 
-#lovometro img {
-    width: 250px;
+#lovometro > :last-child img {
+    width: 300px;
+    position: absolute;
+    animation: heart-beat 2s infinite ease-in-out;
+}
+
+#lovometro > :last-child h3 {
+    z-index: 21;
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+@keyframes heart-beat {
+    0% {
+        width: 290px
+    }
+
+    50% {
+        width: 310px;
+    }
+
+    100% {
+        width: 290px;
+    }
 }
 
