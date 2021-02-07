@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Heart from '../../assets/heart.png'
 import { get_percentage } from '../../services/loveApi'
 
@@ -8,7 +8,22 @@ function Lovometro() {
     const [fname, setFname] = useState("")
     const [sname, setSname] = useState("")
     const [percentage, setPercentage] = useState("")
+    const [display, setDisplay] = useState("0")
 
+    useEffect(() => {
+        let goal = parseInt(percentage)
+        let current = parseInt(display)
+
+        if  (goal !== current && percentage !== "") {
+            setTimeout(() => {
+                if (current < goal) {
+                    setDisplay(current + 1)
+                } else {
+                    setDisplay(current - 1)
+                }
+            }, 30)
+        }
+    }, [percentage, display])
     const handleSubmit = (e) => {
         e.preventDefault()
         get_percentage(fname, sname, setPercentage)
@@ -28,7 +43,7 @@ function Lovometro() {
                 </form>
             </div>
             <div>
-                <h3 className="result">{percentage}{percentage && "%"}</h3>
+                <h3 className="result">{display}{display && "%"}</h3>
                 <img src={Heart} alt="Heart"/>
             </div>
         </main>
