@@ -44,7 +44,7 @@
     width: 250px;
 }
 
-/* @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .app .heart1 {
         top: 600px;
         left: 200px;
@@ -55,11 +55,15 @@
     .app .heart1 {
         left: 150px;
     }
-} */
+}
 
 
 @media only screen and (max-width: 440px) {
     .app .heart4 {
         right: 20px;
+    }
+
+    .app .heart1 {
+        left: 50;
     }
 }
