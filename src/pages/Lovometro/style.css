@@ -5,10 +5,11 @@
     rgba(255, 255, 255, 0.3)
     );
     border-radius: 30px;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
     min-width: 70%;
-    min-height: 450px;
+    min-height: 500px;
     display: flex;
+    z-index: 10;
 }
 
 /* ------------------------- LEFT SECTION ----------------------------- */

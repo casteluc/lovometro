@@ -10,3 +10,37 @@
     background: linear-gradient(to top right, #FF5F6D, #FFC371);
     font-family: Montserrat;
 }
+
+.app img {
+    position: absolute;
+    max-width: 300px;
+    z-index: 1;
+}
+
+.app .heart1 {
+    transform: rotate(-5deg);
+    bottom: 60px;
+    left: 100px;
+    width: 200px;
+}
+
+.app .heart2 {
+    transform: rotate(10deg);
+    right: 140px;
+    top: 350px;
+    width: 150px;
+}
+
+.app .heart3 {
+    transform: rotate(-5deg);
+    right: 290px;
+    top: 220px;
+    width: 200px;
+}
+
+.app .heart4 {
+    transform: rotate(11deg);
+    right: 50px;
+    top: 50px;
+    width: 250px;
+}

@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="app">
         <Lovometro/>
-        {/* <img src={Heart} alt="Heart" className="heart"/>
-        <img src={Heart} alt="Heart" className="heart"/>
-        <img src={Heart} alt="Heart" className="heart"/>
-        <img src={Heart} alt="Heart" className="heart"/> */}
+        <img src={Heart} alt="Heart" className="heart1"/>
+        <img src={Heart} alt="Heart" className="heart2"/>
+        <img src={Heart} alt="Heart" className="heart3"/>
+        <img src={Heart} alt="Heart" className="heart4"/>
     </div>
   );
 }
