@@ -84,6 +84,14 @@
 }
 
 /* ------------------------- RIGTH SECTION ----------------------------- */
+#lovometro > :last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 55%;
+}
+
 #lovometro img {
     width: 250px;
 }
