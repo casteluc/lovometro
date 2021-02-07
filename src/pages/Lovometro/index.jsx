@@ -9,11 +9,11 @@ function Lovometro() {
             <div>
                 <div className="title">
                     <h1>Lovometro</h1>
-                    <h2>Descubra o quanto você e a pessoa amada se combinam</h2>
+                    <h2>Descubra o quanto você e a pessoa amada se combinam!</h2>
                 </div>
                 <form>
-                    <input type="text" name="fname"/>
-                    <input type="text" name="sname"/>
+                    <input type="text" name="fname" placeholder="Seu nome"/>
+                    <input type="text" name="sname" placeholder="Nome da pessoa amada"/>
                     <input type="submit" value="calcular"/>
                 </form>
             </div>

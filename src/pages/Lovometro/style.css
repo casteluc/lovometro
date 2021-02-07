@@ -7,7 +7,7 @@
     border-radius: 30px;
     backdrop-filter: blur(30px);
     min-width: 70%;
-    min-height: 500px;
+    min-height: 450px;
     display: flex;
 }
 
@@ -21,6 +21,10 @@
         rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.1)
     );
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #lovometro h1, #lovometro h2, #lovometro input[type="submit"] {
@@ -35,10 +39,17 @@
 #lovometro .title {
     max-width: 90%;
     margin: 0 auto;
+    text-align: center;
 }
 
 #lovometro h1 {
     font-size: 3rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#lovometro h2 {
+    line-height: 1.4rem;
 }
 
 #lovometro form {
@@ -47,6 +58,30 @@
     align-items: center;
 }
 
+#lovometro form input {
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 300px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    font-size: 1.125rem;
+}
+
+#lovometro form input::placeholder {
+    color: rgba(0, 0, 0, 0.2)
+}
+
+#lovometro input[type="submit"] {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #FE4444;
+    max-width: 200px;
+    margin-top: 15px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+}
 
 /* ------------------------- RIGTH SECTION ----------------------------- */
 #lovometro img {
