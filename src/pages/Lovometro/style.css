@@ -83,6 +83,14 @@
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
 }
 
+#lovometro input[type="submit"]:hover {
+    background-color: #e73737;
+    cursor: pointer;
+}
+
+#lovometro input[type="submit"]:active {
+    background-color: #c43030;
+}
 /* ------------------------- RIGTH SECTION ----------------------------- */
 #lovometro > :last-child {
     display: flex;
